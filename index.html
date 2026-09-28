@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nail Design Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-decoration decoration-1"></div>
+    <div class="background-decoration decoration-2"></div>
+
+    <main class="quiz-container">
+
+        <!-- CABEÇALHO -->
+        <header class="quiz-header">
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+
+                <div>
+                    <span class="brand-small">QUIZ</span>
+                    <h1>Nail Design</h1>
+                </div>
+            </div>
+
+            <div class="question-counter">
+                <span id="current-question">1</span>
+                <span class="counter-line">/</span>
+                <span id="total-questions">10</span>
+            </div>
+        </header>
+
+        <!-- BARRA DE PROGRESSO -->
+        <div class="progress-area">
+            <div class="progress-info">
+                <span>Seu progresso</span>
+                <span id="progress-percent">10%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- QUIZ -->
+        <section class="quiz-card" id="quiz-card">
+
+            <div class="question-category">
+                <span>💅</span>
+                NAIL DESIGN
+            </div>
+
+            <h2 id="question">
+                Carregando pergunta...
+            </h2>
+
+            <p class="question-description">
+                Escolha a alternativa que você considera correta.
+            </p>
+
+            <div class="answers" id="answers">
+                <!-- Respostas inseridas pelo JavaScript -->
+            </div>
+
+            <div class="quiz-footer">
+                <button class="next-button" id="next-button" disabled>
+                    Próxima pergunta
+                    <span>→</span>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- RESULTADO -->
+        <section class="result-card hidden" id="result-card">
+
+            <div class="result-decoration">✦</div>
+
+            <div class="result-icon">
+                💅
+            </div>
+
+            <span class="result-label">QUIZ FINALIZADO</span>
+
+            <h2>Seu resultado</h2>
+
+            <div class="score-circle">
+                <div>
+                    <strong id="score">0</strong>
+                    <span>/ 10</span>
+                </div>
+            </div>
+
+            <h3 id="result-title">Parabéns!</h3>
+
+            <p id="result-message">
+                Você concluiu o quiz de Nail Design.
+            </p>
+
+            <button class="restart-button" id="restart-button">
+                ✨ Fazer novamente
+            </button>
+
+        </section>
+
+        <footer>
+            <span>♡</span>
+            Nail Design Quiz
+            <span>♡</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
